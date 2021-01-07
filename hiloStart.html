@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!--/*
+* FILE : hiloStart.html
+* PROJECT : PROG2001 - Assignment #4
+* PROGRAMMER : Janeth Santos
+* FIRST VERSION : october 28, 2020
+* DESCRIPTION :
+* HTML file that will ask user for their name
+* validate input is not empty, and send to the ASP webserver
+*/-->
+
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Hi-Lo game ASP</title>
+
+ <link rel="stylesheet" href="./css/hiloGame.css">
+
+ <style>
+
+ body {
+       background: url(img/1.jpg) no-repeat center center fixed;    /* The image used */
+       background-color: #cccccc;       /* Used if the image is unavailable */
+       background-size: cover;          /* Resize the background image to cover the entire container */
+       background-origin: boder-box;
+       font-family: sans-serif;
+       }
+ </style>
+
+
+    <script type="text/javascript">
+
+    // -----------------------------------------------------------------------------
+      // FUNCTION : validateName()
+      // DESCRIPTION :
+      // This function validates the name input in the webpage
+      // if validation is sucessfull it will submit the form
+      // PARAMETERS : none
+      // RETURNS : shouldSubmit
+      // -----------------------------------------------------------------------------
+      function validateName()
+      {
+        var shouldSubmit = false
+          whichName = document.getElementById('nameInput').value;
+
+        // check that the person's name is not blank
+        if ((whichName.trim()).length == 0)
+        {
+          document.getElementById("nameBlankError").innerHTML = "Name can <b>NOT</b> be blank";
+        }
+        else
+        {
+          shouldSubmit = true;
+          document.getElementById("nameBlankError").innerHTML = "";
+        }
+        return shouldSubmit
+      }
+
+    </script>
+
+  </head>
+
+  <body>
+    <form name="hiloStartForm" action="./maxNumber.asp" onSubmit= "return validateName();" method="POST" autocomplete="off">
+
+      <div class="login-box" id="nameDiv">
+        <!-- Div name -->
+
+        <h1 class="neon blue" style="font-size: 3em">HiLo Game </h1>
+        <div class="user-box">
+            <label>Enter Name</label><br>
+            <input id="nameInput" name="nameInput" type="text" placeholder="John Doe" style="text-align: center; color: pink">
+        </div>
+            <div id="nameBlankError" style=" font-family:calibri; color:orange; text-align:center;"></div><br>
+            <button class="button"  type="submit">Submit name</button>
+
+
+      </div>
+  </body>
+</html>

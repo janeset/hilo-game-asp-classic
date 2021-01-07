@@ -1,0 +1,227 @@
+/*
+* FILE : hiloGame.css
+* PROJECT : PROG2001 - Assignment #4
+* PROGRAMMER : Janeth Santos
+* FIRST VERSION : Oct 31, 2020
+* DESCRIPTION :
+* This file contains all the styles used in the hiloGame webpages.
+*/
+
+
+
+html {
+  height: 100%;
+}
+
+
+
+/* Original source : https://freefrontend.com/css-forms/
+Author Soufiane Khalfaoui HaSsani : https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda */
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 450px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box a:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+
+
+
+/*
+Class used for the font styling
+original source https://xopixel.com/neon-light-text-effect-css3/
+*/
+.neon {
+    font-family: 'Century gothic';
+    text-align: center;
+    font-weight: lighter;
+
+    color: #fff;
+    letter-spacing: 0.15em;
+}
+
+.blue {
+    text-shadow:
+        0 0 5px #7bacff,
+        0 0 10px #7bacff,
+        0 0 20px #7bacff,
+        0 0 40px #7bacff,
+        0 0 80px #7bacff,
+        0 0 90px #7bacff,
+        0 0 100px #7bacff,
+        0 0 150px #7bacff;
+}
+
+.green {
+    text-shadow:
+        0 0 5px #7bffce,
+        0 0 10px #7bffce,
+        0 0 20px #7bffce,
+        0 0 40px #7bffce,
+        0 0 80px #7bffce,
+        0 0 90px #7bffce,
+        0 0 100px #7bffce,
+        0 0 150px #7bffce;
+}
+
+/* Class used for the button
+original source https://www.w3docs.com/snippets/css/how-to-create-flashing-glowing-button-using-animation-in-css3.html */
+.button {
+        border: 1px transparent;
+        -webkit-border-radius: 40px;
+        border-radius: 40px;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Arial;
+        font-size: 20px;
+        padding: 8px 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 0% 0% 0% 20%;
+        -webkit-animation: glowing 1300ms infinite;
+        -moz-animation: glowing 1300ms infinite;
+        -o-animation: glowing 1300ms infinite;
+        animation: glowing 1300ms infinite;
+      }
+      @-webkit-keyframes glowing {
+        0% {
+          background-color: #0091b2;
+          -webkit-box-shadow: 0 0 3px #0091b2;
+        }
+        50% {
+          background-color: #21c7ed;
+          -webkit-box-shadow: 0 0 15px #21c7ed;
+        }
+        100% {
+          background-color: #0091b2;
+          -webkit-box-shadow: 0 0 3px #0091b2;
+        }
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #0091b2;
+          box-shadow: 0 0 3px #0091b2;
+        }
+        50% {
+          background-color: #21c7ed;
+          box-shadow: 0 0 15px #21c7ed;
+        }
+        100% {
+          background-color: #0091b2;
+          box-shadow: 0 0 3px #0091b2;
+        }
+      }
+      .svg-btn {
+        display: block;
+        width: 230px;
+        height: 230px;
+        margin-left: 10px;
+      }
+      svg {
+        fill: blue;
+        -webkit-animation: glowing-polygon 1300ms infinite;
+        -moz-animation: glowing-polygon 1300ms infinite;
+        -o-animation: glowing-polygon 1300ms infinite;
+        animation: glowing-polygon 1300ms infinite;
+      }
+      @-webkit-keyframes glowing-polygon {
+        0% {
+          fill: #0091b2;
+          -webkit-filter: drop-shadow( 0 0 3px #0091b2);
+        }
+        50% {
+          fill: #21c7ed;
+          -webkit-filter: drop-shadow( 0 0 15px #21c7ed);
+        }
+        100% {
+          fill: #0091b2;
+          -webkit-filter: drop-shadow( 0 0 3px #0091b2);
+        }
+      }
+      @keyframes glowingPolygon {
+        0% {
+          fill: #0091b2;
+          filter: drop-shadow( 0 0 3px #0091b2);
+        }
+        50% {
+          fill: #21c7ed;
+          filter: drop-shadow( 0 0 15px #21c7ed);
+        }
+        100% {
+          fill: #0091b2;
+          filter: drop-shadow( 0 0 3px #0091b2);
+        }
+      }

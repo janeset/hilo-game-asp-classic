@@ -1,0 +1,93 @@
+/*
+* FILE : winner.css
+* PROJECT : PROG2001 - Assignment #4
+* PROGRAMMER : Janeth Santos
+* FIRST VERSION : Oct 31, 2020
+* DESCRIPTION :
+* This file contains all the styles used in the hiloGame webpages.
+*/
+
+.container {
+  position: absolute;
+  margin: 10% 45% 0% 35%;
+  width: 30%;
+}
+
+.buttonWin {
+  width: 170px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2em;
+  margin: 0% 0% 0% 30%;
+  font-family: 'sans-serif';
+  cursor: pointer;
+  display: inline-block;
+}
+
+.bGlow {
+  background-color: black;
+  border: 3px solid #00d7c3;
+  border-radius: 50px;
+  -webkit-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+  font-family: 'sans-serif';
+  text-align: center;
+  font-weight: lighter;
+  color: #fff;
+  letter-spacing: 0.15em;
+
+  text-shadow:
+      0 0 5px #7bffce,
+      0 0 10px #7bffce,
+      0 0 20px #7bffce,
+      0 0 40px #7bffce,
+      0 0 80px #7bffce,
+      0 0 90px #7bffce,
+      0 0 100px #7bffce,
+      0 0 150px #7bffce;
+}
+.bGlow:hover {
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
+}
+
+
+/*
+Class used for the font styling
+original source https://xopixel.com/neon-light-text-effect-css3/
+*/
+.neon {
+    font-family: 'Century gothic';
+    text-align: center;
+    font-weight: lighter;
+
+    color: #fff;
+    letter-spacing: 0.15em;
+}
+
+.blue {
+    text-shadow:
+        0 0 5px #7bacff,
+        0 0 10px #7bacff,
+        0 0 20px #7bacff,
+        0 0 40px #7bacff,
+        0 0 80px #7bacff,
+        0 0 90px #7bacff,
+        0 0 100px #7bacff,
+        0 0 150px #7bacff;
+}
+
+.green {
+    text-shadow:
+        0 0 5px #7bffce,
+        0 0 10px #7bffce,
+        0 0 20px #7bffce,
+        0 0 40px #7bffce,
+        0 0 80px #7bffce,
+        0 0 90px #7bffce,
+        0 0 100px #7bffce,
+        0 0 150px #7bffce;
+}
